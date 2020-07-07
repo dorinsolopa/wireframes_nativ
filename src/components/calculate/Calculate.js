@@ -13,12 +13,23 @@ class Calculate extends React.Component {
   };
   render() {
     return (
-      <Card style={{display:"flex" ,justifyContent:"between"}}>
-        <Form>
-          <Form.Item>
-            <Input placeholder="Address" />
+      <div
+        style={{
+         marginTop:"150px",
+          position: "absolute",
+          zIndex: "1",
+          boxShadow:"2px 3px 3px 2px"
+        }}
+      >
+        <Card>
+          <Form style={{ display: "flex" }}>
+            <Form.Item>
+              <Input placeholder="Address" />
+            </Form.Item>
+            <p style={{ marginRight: "10px", marginLeft: "10px" }}>
+              <b>Bedrooms:</b>
+            </p>
             <Radio.Group onChange={this.onChange} value={this.state.value}>
-              <p>Bedrooms:</p>
               <Radio value={1}>1</Radio>
               <Radio value={2}>2</Radio>
               <Radio value={3}>3</Radio>
@@ -27,9 +38,9 @@ class Calculate extends React.Component {
             <Button style={{ backgroundColor: "black", color: "white" }}>
               Calculate
             </Button>
-          </Form.Item>
-        </Form>
-      </Card>
+          </Form>
+        </Card>
+      </div>
     );
   }
 }

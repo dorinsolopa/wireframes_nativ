@@ -4,7 +4,7 @@ import { cleaning } from "../../info/Info";
 import CleanHospital from "../../components/clean/CleanHospital";
 import { Card, Row, Col } from "antd";
 import NavbarHeader from "../../components/Header/Navbar";
-
+import  Calculate  from "../../components/calculate/Calculate" 
 class CleaningHospital extends React.Component {
   render() {
     return (
@@ -22,6 +22,7 @@ class CleaningHospital extends React.Component {
               <Col span={12}>
                 <CardGrey />
               </Col>
+              <Calculate />
             </Row>
        
       </Card>

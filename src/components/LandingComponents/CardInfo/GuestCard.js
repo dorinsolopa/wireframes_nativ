@@ -7,7 +7,7 @@ class GuestCard extends React.Component {
     return (
       <Card
         bordered={false}
-        style={{ backgroundColor: "grey", paddingBottom: "50px" }}
+        style={{ backgroundColor: "grey", paddingBottom: "50px" , position: "relative" }}
       >
         <h1 style={{ textAlign: "center", paddingBottom: "20px" }}>
           <b>{title}</b>

@@ -9,12 +9,12 @@ function App() {
     <React.Fragment>
       <AppRouter />
       <div style={{ backgroundColor: "black" }}>
-          <Row justify="center">
-            <Col span={15}>
-              <FooterCard />
-            </Col>
-          </Row>
-        </div>
+        <Row justify="center">
+          <Col span={15}>
+            <FooterCard />
+          </Col>
+        </Row>
+      </div>
     </React.Fragment>
   );
 }

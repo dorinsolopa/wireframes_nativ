@@ -6,6 +6,7 @@ import NavbarHeader from "../../components/Header/Navbar";
 import GuestCard from "../../components/LandingComponents/CardInfo/GuestCard";
 import { about, guest } from "../../info/Info";
 import Actions from "../../components/Actions/Actions";
+import Calculate from "../../components/calculate/Calculate";
 class About extends React.Component {
   render() {
     return (
@@ -26,11 +27,12 @@ class About extends React.Component {
             );
           })}
         </div>
-        <div style={{ backgroundColor: "grey" }}>
+        <div style={{ backgroundColor: "grey"}}>
           <Row justify="center">
-            <Col span={12}>
-              <GuestCard  title={guest[2].title} />
+            <Col span={12}>   
+              <GuestCard title={guest[2].title} />      
             </Col>
+            <Calculate />
           </Row>
         </div>
       </div>

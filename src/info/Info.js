@@ -152,3 +152,9 @@ export const about = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at vestibulum justo, luctus sodales mauris. Nulla at luctus neque, quis blandit libero. Donec sed mauris ante. Nunc fringilla justo sed ultrices efficitur. Etiam sit amet justo non orci lacinia tempor eu sit amet lorem. Duis tincidunt vitae diam at commodo",
   },
 ];
+
+export const ambience = {
+  title: "Beauty and ambience",
+  info:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dolor justo, mattis ut mi ac, tempus tempus libero. Praesent molestie, ex vitae fermentum auctor, libero nibh pellentesque augue, et aliquam mi risus vitae enim. Phasellus convallis odio eu magna ullamcorper congue. Suspendisse pulvinar lacinia accumsan. Nulla pretium, odio sit amet facilisis venenatis, quam mi vestibulum erat, id lobortis nulla velit non lorem.",
+};

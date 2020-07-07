@@ -3,8 +3,9 @@ import { Card } from "antd";
 
 class FooterCard extends React.Component {
   render() {
+    const height = this.props.height || "100%";
     return (
-      <Card bordered={false} style={{ backgroundColor: "black" }}>
+      <Card height={height} bordered={false} style={{ backgroundColor: "black" }}>
         <div
           style={{
             backgroundColor: "black",

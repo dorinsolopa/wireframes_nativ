@@ -5,6 +5,7 @@ import ContactInfo from "../../components/ContactComponent/ContactInfo";
 import Map from "../../components/ContactComponent/Map";
 import ContactForm from "../../components/ContactComponent/ContactForm";
 import { contact } from "../../info/Info";
+import  Calculate  from "../../components/calculate/Calculate"
 class Contact extends React.Component {
   render() {
     return (
@@ -37,8 +38,11 @@ class Contact extends React.Component {
           <Row justify="start">
             <Col span={7}>
               <ContactForm />
+            
             </Col>
+          <Col span={12}>  <Calculate /></Col>
           </Row>
+    
         </div>
       </div>
     );

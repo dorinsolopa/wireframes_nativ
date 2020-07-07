@@ -4,6 +4,7 @@ import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
 import Listing from "../pages/Listing/Listing";
 import CleaningHospital from "../pages/cleaning/CleaningHospital";
+import Ambience from "../pages/cleaning/Ambience";
 export const routes = [
   {
     path: "/",
@@ -40,5 +41,11 @@ export const routes = [
     exact: true,
     component: CleaningHospital,
     name: "CleaningHospital",
+  },
+  {
+    path: "/ambience",
+    exact: true,
+    component: Ambience,
+    name: "Ambience",
   },
 ];

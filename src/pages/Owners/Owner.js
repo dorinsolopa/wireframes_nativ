@@ -7,7 +7,7 @@ import GuestCard from "../../components/LandingComponents/CardInfo/GuestCard";
 import NavbarHeader from "../../components/Header/Navbar";
 import { owner, cozy, infoCozy, guest } from "../../info/Info";
 import Actions from "../../components/Actions/Actions";
-
+import Calculate from "../../components/calculate/Calculate";
 class Owners extends React.Component {
   render() {
     return (
@@ -18,7 +18,7 @@ class Owners extends React.Component {
           </Col>
         </Row>
 
-        <div style={{ padding: "40px" }}>
+        <div style={{ padding: "40px", position: "relative" }}>
           <Row justify="space-around">
             <Col span={14}>
               <CozyCard title={infoCozy.title} text={infoCozy.text} />
@@ -26,6 +26,7 @@ class Owners extends React.Component {
             <Col span={10}>
               <CardGrey />
             </Col>
+            <Calculate />
           </Row>
         </div>
 
@@ -72,9 +73,7 @@ class Owners extends React.Component {
         <div style={{ paddingBottom: "100px", backgroundColor: "grey" }}>
           <Row justify="center">
             <Col span={15}>
-              <GuestCard  title={guest[1].title}
-                text={guest[1].text}
-              />
+              <GuestCard title={guest[1].title} text={guest[1].text} />
             </Col>
           </Row>
         </div>
@@ -107,6 +106,7 @@ class Owners extends React.Component {
                 </div>
               </Card>
             </Col>
+            <Calculate />
           </Row>
         </div>
       </div>
