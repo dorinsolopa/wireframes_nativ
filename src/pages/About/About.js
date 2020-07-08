@@ -27,12 +27,12 @@ class About extends React.Component {
             );
           })}
         </div>
-        <div style={{ backgroundColor: "grey"}}>
+        <div style={{ backgroundColor: "grey", position:"relative"}}>
           <Row justify="center">
             <Col span={12}>   
               <GuestCard title={guest[2].title} />      
             </Col>
-            <Calculate />
+            <Calculate  style={{bottom:"-18px"}}/>
           </Row>
         </div>
       </div>

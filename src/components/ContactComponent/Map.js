@@ -25,7 +25,10 @@ function Map() {
   }, []);
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyDuZKloNVBUC8QUxqpZxCbUi9eILOQeGQw">
+    <LoadScript
+      googleMapsApiKey="AIzaSyDuZKloNVBUC8QUxqpZxCbUi9eILOQeGQw"
+      column={{ xxl: 4, xl: 3, lg: 3, md: 3, sm: 2, xs: 1 }}
+    >
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}

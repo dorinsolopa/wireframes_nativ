@@ -12,21 +12,32 @@ class Calculate extends React.Component {
     });
   };
   render() {
+    const {style} = this.props;
     return (
       <div
         style={{
-         marginTop:"150px",
+          marginTop: "150px",
           position: "absolute",
           zIndex: "1",
-          boxShadow:"2px 3px 3px 2px"
+          boxShadow: "2px 3px 3px 2px",
+          ...style 
         }}
       >
         <Card>
-          <Form style={{ display: "flex" }}>
+          <Form style={{ display: "flex", alignItems: "center" }}>
             <Form.Item>
-              <Input placeholder="Address" />
+              <Input
+                style={{
+                  borderBottom: "solid 2px black",
+                  borderTop: "none",
+                  borderRight: "none",
+                  borderLeft: "none",
+                  paddingRight: "20px",
+                }}
+                placeholder="Address"
+              />
             </Form.Item>
-            <p style={{ marginRight: "10px", marginLeft: "10px" }}>
+            <p style={{ marginRight: "15px", marginLeft: "15px",paddingTop:"13px" }}>
               <b>Bedrooms:</b>
             </p>
             <Radio.Group onChange={this.onChange} value={this.state.value}>

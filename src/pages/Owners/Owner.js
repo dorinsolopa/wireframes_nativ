@@ -77,7 +77,7 @@ class Owners extends React.Component {
             </Col>
           </Row>
         </div>
-        <div>
+        <div style={{position:"relative"}}>
           <Row justify="space-around">
             <Col span={14}>
               <Card bordered={false} style={{ paddingBottom: "50px" }}>
@@ -106,7 +106,7 @@ class Owners extends React.Component {
                 </div>
               </Card>
             </Col>
-            <Calculate />
+            <Calculate  style={{marginTop:"initial", bottom:"-20px"}}/>
           </Row>
         </div>
       </div>

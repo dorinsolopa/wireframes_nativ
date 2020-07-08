@@ -70,7 +70,7 @@ class ContactForm extends React.Component {
             <Button
               block
               size="large"
-              style={{ backgroundColor: "black", color: "white" }}
+              style={{ backgroundColor: "black", color: "white",marginTop:"20px" }}
             >
               SEND
             </Button>

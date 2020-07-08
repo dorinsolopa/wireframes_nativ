@@ -5,7 +5,7 @@ import ContactInfo from "../../components/ContactComponent/ContactInfo";
 import Map from "../../components/ContactComponent/Map";
 import ContactForm from "../../components/ContactComponent/ContactForm";
 import { contact } from "../../info/Info";
-import  Calculate  from "../../components/calculate/Calculate"
+import Calculate from "../../components/calculate/Calculate";
 class Contact extends React.Component {
   render() {
     return (
@@ -34,15 +34,13 @@ class Contact extends React.Component {
             </Col>
           </Row>
         </div>
-        <div>
+        <div style={{ position: "relative" }}>
           <Row justify="start">
             <Col span={7}>
               <ContactForm />
-            
             </Col>
-          <Col span={12}>  <Calculate /></Col>
+            <Calculate style={{ bottom: "-15px", right: "300px" }} />
           </Row>
-    
         </div>
       </div>
     );
